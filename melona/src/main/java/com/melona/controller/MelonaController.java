@@ -10,13 +10,4 @@ public class MelonaController {
 	public String main() {
 		return "melona/main";
 	}
-	
-	
-	
-	
-			
-	
-	
-	
-
 }
