@@ -11,9 +11,5 @@ public class MelonaController {
 		return "melona/main";
 	}
 	
-	@RequestMapping("/home.do")
-	public String home() {
-		return null;
-	}
-	
+
 }
