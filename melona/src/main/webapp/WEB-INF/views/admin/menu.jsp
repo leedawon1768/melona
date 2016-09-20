@@ -12,18 +12,26 @@
 
 	<div class="col-sm-10">
 		<ul class="nav navbar-nav">
-			<li class="${current_page eq 'main' ? 'active' : '' }"><a
-				href="chart.do"><img src="../resources/icons/멜론차트.png" alt=""></a>
+			<li class="${current_page eq 'main' ? 'active' : '' } dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#">메로나 <b class="caret"></b></a>
+		        <ul class="dropdown-menu">
+		        	<li><a href="singer.do">가수</a></li>
+		            <li><a href="album.do">앨범</a></li>
+		            <li><a href="music.do">음악</a></li>
+		        </ul>
 			</li>
-			<li class="${current_page eq 'blog' ? 'active' : '' }"><a
-				href="genre.do"><img src="../resources/icons/최신.png" alt=""></a>
+			<li class="${current_page eq '' ? 'active' : '' }">
+				<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#">메로나 티켓 <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+		        	<li><a href="concert.do">공연</a></li>
+		            <li><a href="stage.do">공연장</a></li>
+		        </ul>
 			</li>
-			<li class="${current_page eq 'page2' ? 'active' : '' }"><a
-				href="new.do"><img src="../resources/icons/장르.png" alt=""></a></li>
-		</ul>
-		<ul class="nav navbar-nav navbar-right">
-			<li class="${current_page eq 'main' ? 'active' : '' }"><a
-				href="main.do"><img src="../resources/icons/마이뮤직.png" alt=""></a>
+			<li class="${current_page eq '' ? 'active' : '' }">
+				<a href="stats.do">통계</a>
+			</li>
+			<li class="${current_page eq '' ? 'active' : '' }">
+				<a href="member.do">회원 관리</a>
 			</li>
 		</ul>
 	</div>
