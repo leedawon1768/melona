@@ -57,6 +57,10 @@ local.properties
 .recommenders/
 
 
+### mp3 ###
+*.mp3
+*.ogg
+
 ### Java ###
 *.class
 
