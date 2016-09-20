@@ -9,7 +9,7 @@ public class Tqna {
 	private String memo;
 	private String type;
 	private Date regdate;
-	private int memberNo;
+	private Members memberNo;
 	
 	public int getTqnaNo() {
 		return tqnaNo;

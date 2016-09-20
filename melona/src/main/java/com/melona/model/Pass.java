@@ -2,11 +2,11 @@ package com.melona.model;
 
 public class Pass {
 
-	private int aassNo;
+	private int passNo;
 	private int downloadCount;
 	private String name;
 	private int price;
-	private int shoppingNo;
+	private ShoppingList shoppingNo;
 	
 	public int getAassNo() {
 		return aassNo;

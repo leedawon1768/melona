@@ -4,7 +4,7 @@ public class MyAlbum {
 
 	private int no;
 	private String name;
-	private int menberNo;
+	private Members menberNo;
 	
 	public int getNo() {
 		return no;
