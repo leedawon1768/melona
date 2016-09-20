@@ -4,6 +4,7 @@ public class PlayList {
 
 	private MyAlbum myalbumNo;
 	private Music musicNo;
+	private int listlanking;
 	
 	public MyAlbum getMyalbumNo() {
 		return myalbumNo;
@@ -17,6 +18,14 @@ public class PlayList {
 	public void setMusicNo(Music musicNo) {
 		this.musicNo = musicNo;
 	}
+	public int getListlanking() {
+		return listlanking;
+	}
+	public void setListlanking(int listlanking) {
+		this.listlanking = listlanking;
+	}
+	
+	
 	
 	
 }
