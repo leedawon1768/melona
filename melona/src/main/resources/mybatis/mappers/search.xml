@@ -4,5 +4,39 @@
 
 <mapper namespace="com.melona.dao.SearchDao">
 
-	
+	<select id="getSinger" parameterType="String" resultType="Singer">
+		select
+			singer_no as "no",
+			name as "name",
+			img as "img"
+		from Singer
+		where
+			name = #{value}
+	</select>
+
+	<select id="getAlbumBySingerNo" parameterType="int" resultType="Album">
+		select 
+			album_no as "no", 
+			name as "name", 
+			release_date as "releaseDate", 
+			img as "img", 
+			country as "country", 
+			genre_no as "genreNo.no"
+		from album
+		where 
+			album_no = (
+				select album_no
+				from album_singer a, singer b
+				where
+				b.singer_no = #{value}
+				and a.singer_no = b.singer_no
+			)
+	</select>
+
+	<!-- 
+	<select id="getMusicByAlbumNo" parameterType="int" resultType="Music"> 
+	</select> 
+	<select id="getConcerts" parameterType="int" resultType="C_Concert"> 
+	</select> -->
+
 </mapper>

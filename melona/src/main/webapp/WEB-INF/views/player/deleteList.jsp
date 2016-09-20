@@ -13,7 +13,6 @@
 	img.logo-img {width: 200px; height: 200px;}
 	#text1 {font-size: large; font-weight: bolder;}
 	#text2 {margin-top: 10px;}
-	#makePL {margin-left: 8px;}
 	th {text-align: center; color: #5cb85c; }
 	td {text-align: center; }
 </style>
@@ -35,7 +34,6 @@
 			
 			<div class="row">
 				<span id="text1">순서변경/삭제</span>
-				<a id="makePL" href="addplaylist.do" class="btn btn-success pull-right"> <span class="glyphicon glyphicon-headphones"></span>플레이리스트 만들기</a>
 				<a href="playlist.do" class="btn btn-warning pull-right">플레이리스트롤 돌아가기</a>
 			</div>
 			

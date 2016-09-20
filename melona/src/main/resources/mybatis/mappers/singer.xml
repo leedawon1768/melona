@@ -6,7 +6,7 @@
 
 	<!-- 모든 가수목록 조회 -->
 	<select id="getAllSingers" resultType="Singer">
-		select * from singer
+		select singer_no as no, name, img from singer
 	</select>
 	
 	<!-- 가수번호로 가수 조회 -->
