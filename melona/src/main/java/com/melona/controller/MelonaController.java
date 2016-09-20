@@ -10,9 +10,18 @@ public class MelonaController {
 	public String main() {
 		return "melona/main";
 	}
+
 	
 	@RequestMapping("/seat.do")
 	public String seat() {
 		return "melona/seat";
+	}
+
+
+	// 임시!!!!!!!!!
+	@RequestMapping("/player.do")
+	public String player() {
+		return "player/player";
+
 	}
 }
