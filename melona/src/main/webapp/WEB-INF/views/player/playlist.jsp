@@ -15,13 +15,9 @@
 	td {text-align: center; }
 	table { margin-top: 15px;}
 	#makePL {margin-left: 8px;}
+	#count {font-size: 70px; color: gray}
 </style>
 <title>Melona</title>
-<script type="text/javascript">
-	
-	var albums = ${albums };
-	
-</script>
 </head>
 <body>
 	<div class="container">
@@ -60,45 +56,16 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
+				
 					<c:forEach var="albums" items="${albums }" varStatus="status" >
 						<tr>
-							<td>${status.index +1 }</td>
+							<td id="count">${status.index +1 }</td>
 							<td>${albums.no }</td>
-							<td></td>
-							<td></td>
+							<td><a href="" class="btn btn-xs btn-success">듣기</a></td>
+							<td><a href="" class="btn btn-xs btn-danger">다운</a></td>
 						</tr>
 					</c:forEach>
+					
 				</tbody>
 			</table>
 			
