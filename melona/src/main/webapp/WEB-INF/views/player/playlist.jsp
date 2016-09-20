@@ -14,6 +14,7 @@
 	th {text-align: center; color: #5cb85c; }
 	td {text-align: center; }
 	table { margin-top: 15px;}
+	#makePL {margin-left: 8px;}
 </style>
 <title>Melona</title>
 </head>
@@ -34,8 +35,8 @@
 			
 			<div class="row">
 				<span>총 ?개 </span>
-				<a href="deleteList.do" class="btn btn-warning">삭제</a>
-				<a href="addplaylist.do" class="btn btn-success"><span class="glyphicon glyphicon-headphones"></span> 플레이이스트 만들기</a>
+				<a href="addplaylist.do" class="btn btn-success pull-right" id="makePL"><span class="glyphicon glyphicon-headphones"></span> 플레이이스트 만들기</a>
+				<a href="deleteList.do" class="btn btn-warning pull-right">플레이리스트 순서변경/삭제</a>
 			</div>
 						
 			<table class="table">
