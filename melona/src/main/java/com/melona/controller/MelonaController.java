@@ -16,13 +16,6 @@ public class MelonaController {
 		return "melona/main";
 	}
 
-	
-	@RequestMapping("/seat.do")
-	public String seat() {
-		return "melona/seat";
-	}
-
-
 	// 임시!!!!!!!!!
 	// player로 넘어갈때 플레이할 노래들은 "/player.do?no=@@,@@@,@@@@,@@@@@" 인 식으로 전송해주세요
 	@RequestMapping("/player.do")

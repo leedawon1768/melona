@@ -16,8 +16,7 @@ public class C_SeatServiceImpl implements C_SeatService {
 	
 	@Override
 	public List<C_Seat> getSeat() {
-		List<C_Seat> seatList = cseatDao.getSeat();
-		return seatList;
+		return cseatDao.getSeat();
 	}
 
 }

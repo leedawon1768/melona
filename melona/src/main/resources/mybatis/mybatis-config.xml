@@ -4,9 +4,14 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
   
 <configuration>
+
+	<typeAliases>
+		<typeAlias type="com.melona.model.C_Seat" alias="Seat"/>
+	</typeAliases>
 	
 	<mappers>
 		<mapper resource="mybatis/mappers/admin.xml" />
+		<mapper resource="mybatis/mappers/cseat.xml" />
 	</mappers>
 	
 </configuration>
