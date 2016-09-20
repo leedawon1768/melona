@@ -62,10 +62,10 @@
 					</tr>
 				</thead>
 				<tbody>
-					<c:forEach var="albums" items="${albums }" varStatus="status" >
+					<c:forEach var="album" items="${albums }" varStatus="status"  begin="0" end="${albums.size() }"  >
 						<tr>
 							<td><input type="checkbox" id="${status.index }"></td>
-							<td>${albums.no }</td>
+							<td>${album.no }</td>
 							<td><a href="" class="btn btn-xs btn-danger">삭제</a></td>
 						</tr>
 					</c:forEach>
