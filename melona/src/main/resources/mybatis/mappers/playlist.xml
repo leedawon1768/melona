@@ -1,0 +1,17 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.melona.dao.PlayerDao">
+
+	<select id="getPlayList" parameterType="int" resultType="MyAlbum">
+		select m.myalbum_no as no, m.name, m.member_no as memberNo
+		from myalbum m, playlist p
+		where m.myalbum_no = p.myalbum_no
+		and member_no = #{value}
+		order by p.listlanking asc
+	</select>
+	
+	
+	
+</mapper>
