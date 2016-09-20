@@ -6,7 +6,7 @@ public class C_Stage {
 	private String name;
 	private String location;
 	private String img;
-	private String location_url;
+	private String locationUrl;
 	
 	public C_Stage() {}
 
@@ -42,12 +42,12 @@ public class C_Stage {
 		this.img = img;
 	}
 
-	public String getLocation_url() {
-		return location_url;
+	public String getLocationUrl() {
+		return locationUrl;
 	}
 
-	public void setLocation_url(String location_url) {
-		this.location_url = location_url;
+	public void setLocationUrl(String locationUrl) {
+		this.locationUrl = locationUrl;
 	}
 	
 }
