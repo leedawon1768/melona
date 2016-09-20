@@ -18,7 +18,9 @@
 </style>
 <title>Melona</title>
 <script type="text/javascript">
-
+	
+	var albums = ${albums };
+	
 </script>
 </head>
 <body>
@@ -46,15 +48,13 @@
 				<thead>
 				<colgroup>
 					<col width="15%">
-					<col width="50%">
-					<col width="15%">
+					<col width="*%">
 					<col width="10%">
 					<col width="10%">
 				</colgroup>
 					<tr>
 						<th>no</th>
 						<th>플레이리스트 정보</th>
-						<th>좋아요</th>
 						<th>듣기</th>
 						<th>전체다운</th>
 					</tr>
@@ -65,6 +65,17 @@
 						<td>a</td>
 						<td>a</td>
 						<td>a</td>
+					</tr>
+					<tr>
+						<td>a</td>
+						<td>a</td>
+						<td>a</td>
+						<td>a</td>
+					</tr>
+					<tr>
+						<td>a</td>
+						<td>a</td>
+						<td>a</td>
 						<td>a</td>
 					</tr>
 					<tr>
@@ -79,22 +90,15 @@
 						<td>a</td>
 						<td>a</td>
 						<td>a</td>
-						<td>a</td>
 					</tr>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
+					<c:forEach var="albums" items="${albums }" varStatus="status" >
+						<tr>
+							<td>${status.index +1 }</td>
+							<td>${albums.no }</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</c:forEach>
 				</tbody>
 			</table>
 			

@@ -19,14 +19,24 @@ public class SearchServiceImpl implements SearchService {
 	
 	@Override
 	public Singer getSinger(String keyword) {
-		// TODO Auto-generated method stub
-		return null;
+		Singer searchSinger = searchDao.getSinger(keyword);
+		
+		if (searchSinger == null) {
+			throw new RuntimeException("검색한 가수가 존재하지 않습니다.");
+		}
+		
+		return searchSinger;
 	}
 
 	@Override
 	public List<Album> getAlbumBySingerNo(int singerNo) {
-		// TODO Auto-generated method stub
-		return null;
+		List<Album> albumList = searchDao.getAlbumBySingerNo(singerNo);
+		
+		if (albumList == null) {
+			throw new RuntimeException("앨범이 존재하지 않습니다.");
+		}
+		
+		return albumList;
 	}
 
 	@Override
