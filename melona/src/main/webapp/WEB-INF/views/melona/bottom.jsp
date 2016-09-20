@@ -7,7 +7,7 @@
 	<div class="col-sm-10">
 		<ul class="nav navbar-nav">
 			<li class="${current_page eq 'main' ? 'active' : '' }"><a
-				href=""><img src="resources/icons/멜론티켓.png" alt=""></a>
+				href=""><img src="resources/icons/메로나티켓.png" alt=""></a>
 			</li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
