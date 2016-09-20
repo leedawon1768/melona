@@ -11,6 +11,9 @@
 		<typeAlias type="com.melona.model.Singer" alias="Singer"/>
 		<typeAlias type="com.melona.model.Album" alias="Album"/>
 		<typeAlias type="com.melona.model.Music" alias="Music"/>
+		<typeAlias type="com.melona.model.C_Concert" alias="C_Concert"/>
+		<typeAlias type="com.melona.model.MyAlbum" alias="MyAlbum"/>
+		<typeAlias type="com.melona.model.Members" alias="Members"/>
 	</typeAliases>
 	
 	<mappers>
@@ -20,6 +23,8 @@
 		<mapper resource="mybatis/mappers/music.xml" />
 		<mapper resource="mybatis/mappers/singer.xml" />
 		<mapper resource="mybatis/mappers/search.xml" />
+		<mapper resource="mybatis/mappers/playlist.xml" />
+		<mapper resource="mybatis/mappers/member.xml" />
 	</mappers>
 	
 </configuration>

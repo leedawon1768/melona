@@ -7,6 +7,8 @@ public class PlayList {
 	private int listlanking;
 	private String image;
 	
+	public PlayList (){}
+	
 	public MyAlbum getMyalbumNo() {
 		return myalbumNo;
 	}

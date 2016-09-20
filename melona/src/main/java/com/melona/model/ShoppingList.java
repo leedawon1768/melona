@@ -9,6 +9,9 @@ public class ShoppingList {
 	private Date start_date;
 	private Date end_date;
 	private Members memberNo;
+	
+	public ShoppingList (){}
+	
 	public int getNo() {
 		return no;
 	}

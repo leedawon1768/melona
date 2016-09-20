@@ -9,6 +9,8 @@ public class Tqna_Comment {
 	private Date regdate;
 	private Tqna tqnaNo;
 	
+	public Tqna_Comment (){}
+	
 	public int getNo() {
 		return no;
 	}

@@ -8,6 +8,8 @@ public class Search {
 	private String keyword;
 	private Date search_date;
 	
+	public Search (){}
+	
 	public int getNo() {
 		return no;
 	}
