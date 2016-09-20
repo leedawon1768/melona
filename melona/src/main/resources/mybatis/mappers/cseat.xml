@@ -1,0 +1,18 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.melona.dao.CSeatDao">
+
+	<select id="getSeat" resultType="C_Seat">
+		select
+			cseat_no as no
+		from
+			C_Seat
+		where
+			reservation = 'Y'
+		order by
+			cseat_no asc
+	</select>
+	
+</mapper>
