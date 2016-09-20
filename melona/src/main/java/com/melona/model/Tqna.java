@@ -10,7 +10,6 @@ public class Tqna {
 	private String type;
 	private Date regdate;
 	private Members memberNo;
-	
 	public int getTqnaNo() {
 		return tqnaNo;
 	}
@@ -41,11 +40,12 @@ public class Tqna {
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
 	}
-	public int getMemberNo() {
+	public Members getMemberNo() {
 		return memberNo;
 	}
-	public void setMemberNo(int memberNo) {
+	public void setMemberNo(Members memberNo) {
 		this.memberNo = memberNo;
 	}
+	
 	
 }

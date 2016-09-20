@@ -5,7 +5,6 @@ public class MyAlbum {
 	private int no;
 	private String name;
 	private Members menberNo;
-	
 	public int getNo() {
 		return no;
 	}
@@ -18,12 +17,14 @@ public class MyAlbum {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getMenberNo() {
+	public Members getMenberNo() {
 		return menberNo;
 	}
-	public void setMenberNo(int menberNo) {
-		menberNo = menberNo;
+	public void setMenberNo(Members menberNo) {
+		this.menberNo = menberNo;
 	}
+	
+
 	
 	
 }

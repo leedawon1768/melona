@@ -7,12 +7,11 @@ public class Pass {
 	private String name;
 	private int price;
 	private ShoppingList shoppingNo;
-	
-	public int getAassNo() {
-		return aassNo;
+	public int getPassNo() {
+		return passNo;
 	}
-	public void setAassNo(int aassNo) {
-		this.aassNo = aassNo;
+	public void setPassNo(int passNo) {
+		this.passNo = passNo;
 	}
 	public int getDownloadCount() {
 		return downloadCount;
@@ -32,10 +31,10 @@ public class Pass {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	public int getShoppingNo() {
+	public ShoppingList getShoppingNo() {
 		return shoppingNo;
 	}
-	public void setShoppingNo(int shoppingNo) {
+	public void setShoppingNo(ShoppingList shoppingNo) {
 		this.shoppingNo = shoppingNo;
 	}
 	
