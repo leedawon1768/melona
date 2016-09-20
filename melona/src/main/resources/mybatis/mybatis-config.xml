@@ -11,6 +11,7 @@
 		<typeAlias type="com.melona.model.Singer" alias="Singer"/>
 		<typeAlias type="com.melona.model.Album" alias="Album"/>
 		<typeAlias type="com.melona.model.Music" alias="Music"/>
+		<typeAlias type="com.melona.model.C_Concert" alias="C_Concert"/>
 	</typeAliases>
 	
 	<mappers>
