@@ -11,5 +11,8 @@ public class MelonaController {
 		return "melona/main";
 	}
 	
-
+	@RequestMapping("/seat.do")
+	public String seat() {
+		return "melona/seat";
+	}
 }
