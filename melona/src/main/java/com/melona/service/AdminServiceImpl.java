@@ -25,6 +25,14 @@ public class AdminServiceImpl implements AdminService {
 		return singerDao.getAllSingers();
 	}
 	
-	
+	@Override
+	public List<Singer> getAllSingers2() {
+		return singerDao.getAllSingers2();
+	}
 
+	@Override
+	public void addSinger(Singer singer) {
+		singerDao.addSinger(singer);
+	}
+	
 }

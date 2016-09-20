@@ -40,8 +40,8 @@
 		</form>
 		<br>
 		<div class="btn-group" role="group" aria-label="...">
-		  <button type="button" class="btn btn-default btn-sm">번호순</button>
-		  <button type="button" class="btn btn-default btn-sm">이름순</button>
+		  <a href="sortSingerByNo.do" class="btn btn-default btn-sm">번호순</a>
+		  <a href="sortSingerByName.do" class="btn btn-default btn-sm">이름순</a>
 		</div>
 		
 		<div class="row">
