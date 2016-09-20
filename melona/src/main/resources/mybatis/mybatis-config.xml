@@ -12,6 +12,9 @@
 	<mappers>
 		<mapper resource="mybatis/mappers/admin.xml" />
 		<mapper resource="mybatis/mappers/cseat.xml" />
+		<mapper resource="mybatis/mappers/album.xml" />
+		<mapper resource="mybatis/mappers/music.xml" />
+		<mapper resource="mybatis/mappers/singer.xml" />
 	</mappers>
 	
 </configuration>
