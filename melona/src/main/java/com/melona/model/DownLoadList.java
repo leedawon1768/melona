@@ -42,6 +42,12 @@ public class DownLoadList {
 	public void setDownload_date(Date download_date) {
 		this.download_date = download_date;
 	}
+
+	@Override
+	public String toString() {
+		return "DownLoadList [download_no=" + download_no + ", member_no=" + member_no + ", music_no=" + music_no
+				+ ", download_date=" + download_date + "]";
+	}
 	
 	
 }

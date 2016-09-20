@@ -69,6 +69,12 @@ public class Mqna {
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
 	}
+
+	@Override
+	public String toString() {
+		return "Mqna [mqna_no=" + mqna_no + ", title=" + title + ", memo=" + memo + ", type1=" + type1 + ", type2="
+				+ type2 + ", member_no=" + member_no + ", regdate=" + regdate + "]";
+	}
 	
 	
 }
