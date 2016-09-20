@@ -50,8 +50,16 @@ public class PlaylistController {
 			int no = 1;
 			List<MyAlbum> albums = playerService.getPlayList(no);
 			MyAlbum a = new MyAlbum();
+			MyAlbum b = new MyAlbum();
+			MyAlbum c = new MyAlbum();
 			a.setNo(11);
+			b.setNo(22);
+			c.setNo(33);
+			
 			albums.add(a);
+			albums.add(b);
+			albums.add(c);
+			
 			model.addAttribute("albums",albums);
 			return "player/deleteList";
 		}else{
