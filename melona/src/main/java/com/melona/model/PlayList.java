@@ -24,8 +24,4 @@ public class PlayList {
 	public void setListlanking(int listlanking) {
 		this.listlanking = listlanking;
 	}
-	
-	
-	
-	
 }
