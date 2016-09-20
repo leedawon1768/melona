@@ -38,7 +38,7 @@ $(document).ready(function() {
 					<td><button class="btn btn-primary" id="${s.no }">${s.no }</button></td>			
 				</c:when>
 				<c:otherwise>
-					<td><button class="btn btn-primary disabled" id="${s.no }">${s.no }</button></td>
+					<td><button class="btn btn-default disabled" id="${s.no }">${s.no }</button></td>
 				</c:otherwise>
 			</c:choose>
 		</th>
