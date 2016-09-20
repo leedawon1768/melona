@@ -10,7 +10,7 @@
 			&nbsp;&nbsp;&nbsp;&nbsp; 주소 : 서울시 종로구 &nbsp;&nbsp;&nbsp;&nbsp;
 			개인정보관리책임자 : 이응수(li.eung.su@gmail.com)</p>
 		<p>Contact for more information.</p>
-		<img src="resources/icons/EEE.jpg" alt="">
+		<img src="/resources/icons/EEE.jpg" alt="">
 		<p>Copyright © 2016 Melona. All rights reserved.</p>
 	</div>
 	<div class="col-sm-3"></div>
