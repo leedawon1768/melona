@@ -4,10 +4,10 @@ public class C_Seat {
 
 	private int no;
 	private C_Stage cstageNo;
-	private char grade;
+	private String grade;
 	private int price;
 	private String position;
-	private char reservation;
+	private String reservation;
 	
 	public C_Seat() {}
 
@@ -27,11 +27,11 @@ public class C_Seat {
 		this.cstageNo = cstageNo;
 	}
 
-	public char getGrade() {
+	public String getGrade() {
 		return grade;
 	}
 
-	public void setGrade(char grade) {
+	public void setGrade(String grade) {
 		this.grade = grade;
 	}
 
@@ -51,11 +51,11 @@ public class C_Seat {
 		this.position = position;
 	}
 
-	public char getReservation() {
+	public String getReservation() {
 		return reservation;
 	}
 
-	public void setReservation(char reservation) {
+	public void setReservation(String reservation) {
 		this.reservation = reservation;
 	}
 	
