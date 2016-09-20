@@ -24,40 +24,37 @@
 	</div>
 	
 	<div class="container">
-		<h2><b>가수</b></h2>
 		<br>
-		<div class="panel panel-success">
-			<div class="panel-heading">
-				<label class="panel-title">목록</label>
+		<h2><b>가수</b>
+			<a href="addSinger.do" class="btn btn-default"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+		</h2>
+		
+		<form class="form-inline pull-right" role="form" method="get" action="searchSinger.do">
+			<div class="form-group inner-addon left-addon">
+			    <label class="sr-only">검색어</label>
+				<input type="text" class="form-control input-sm" name="keyword" value="${param.keyword }" placeholder="가수명을 입력해주세요"/>
 			</div>
-			<div class="panel-body">
-				<table class="table table-striped text-center">
-					<colgroup>
-						<col width="*">
-						<col width="*">
-						<col width="*">
-					</colgroup>
-					<thead>
-						<tr>
-							<th class="text-center">번호</th>
-							<th class="text-center">사진</th>
-							<th class="text-center">가수명</th>
-						</tr>
-					</thead>
-					<tbody class="text-center">
-					<c:forEach var="singer" items="${singerList }">
-						<tr>
-							<td>g</td>
-							<td>g</td>
-							<td>g</td>
-						</tr>
-					</c:forEach>
-					</tbody>
-				</table>
+			<div class="form-group">
+				<input type="submit" class="btn btn-success btn-sm " value="검색"/>
 			</div>
-			<div class="panel-footer text-right">
-				<a href="addSinger.do" class="btn btn-success">등록</a>
-			</div>
+		</form>
+		<br>
+		<div class="btn-group" role="group" aria-label="...">
+		  <button type="button" class="btn btn-default btn-sm">번호순</button>
+		  <button type="button" class="btn btn-default btn-sm">이름순</button>
+		</div>
+		
+		<div class="row">
+		<c:forEach var="singer" items="${singerList }" varStatus="loop">
+		    <div class="col-sm-4 text-center" style="margin-top: 20px; margin-bottom: 20px">
+		    	<div class="text-center" style="width: 352px; height: 350px; padding: 10px">
+					<img src="/resources/singer_img/${singer.img }.jpg" class="img-rounded" width="352px" height="348px">
+				</div>
+				<p>
+		      	<h3>${singer.name }</h3>
+		      	<a href="updateSinger.do" class="btn btn-default btn-block">수정</a>
+		    </div>
+		</c:forEach>
 		</div>
 	</div>
 	
