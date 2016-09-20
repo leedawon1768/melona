@@ -15,7 +15,7 @@
 			<li class="${current_page eq 'main' ? 'active' : '' } dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#">메로나 <b class="caret"></b></a>
 		        <ul class="dropdown-menu">
-		        	<li><a href="main.do">가수</a></li>
+		        	<li><a href="singer.do">가수</a></li>
 		            <li><a href="album.do">앨범</a></li>
 		            <li><a href="music.do">음악</a></li>
 		        </ul>
