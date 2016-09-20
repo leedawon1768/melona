@@ -45,11 +45,13 @@
 						</tr>
 					</thead>
 					<tbody class="text-center">
+					<c:forEach var="singer" items="${singerList }">
 						<tr>
 							<td>g</td>
 							<td>g</td>
 							<td>g</td>
 						</tr>
+					</c:forEach>
 					</tbody>
 				</table>
 			</div>
