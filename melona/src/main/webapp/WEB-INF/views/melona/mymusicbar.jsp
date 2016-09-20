@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
  
 <h3 style="color: #5cb85c;">마이뮤직</h3>
+<div style="border-bottom: 2px solid #343434;"></div>
 <table class="table table-striped table-bordered">
 	<colgroup>
 		<col width="20%">
