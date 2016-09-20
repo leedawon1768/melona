@@ -7,6 +7,7 @@
 
 	<typeAliases>
 		<typeAlias type="com.melona.model.C_Seat" alias="Seat"/>
+		<typeAlias type="com.melona.model.Search" alias="Search"/>
 	</typeAliases>
 	
 	<mappers>
@@ -15,6 +16,7 @@
 		<mapper resource="mybatis/mappers/album.xml" />
 		<mapper resource="mybatis/mappers/music.xml" />
 		<mapper resource="mybatis/mappers/singer.xml" />
+		<mapper resource="mybatis/mappers/search.xml" />
 	</mappers>
 	
 </configuration>
