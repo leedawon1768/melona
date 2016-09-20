@@ -31,6 +31,12 @@ public class MelonaController {
 		}
 		model.addAttribute("PlayList", list);
 		return "player/player";
-
 	}
+
+	// 검색결과(아티스트 상세정보) 페이지
+	@RequestMapping("search.do")
+	public String search() {
+		return "search/detail";
+	}
+	
 }
