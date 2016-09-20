@@ -38,7 +38,7 @@
 				<label class="sr-only" for="exampleInputEmail3">search</label>
 				<input type="search" class="form-control" id="search1" placeholder="검색어를 써봐요">
 			</div>
-			<a href="search.do" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+			<a href="search.do" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></a>
 		</form>
 	</div>
 	
