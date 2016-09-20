@@ -5,6 +5,7 @@ public class PlayList {
 	private MyAlbum myalbumNo;
 	private Music musicNo;
 	private int listlanking;
+	private String image;
 	
 	public MyAlbum getMyalbumNo() {
 		return myalbumNo;
@@ -24,8 +25,12 @@ public class PlayList {
 	public void setListlanking(int listlanking) {
 		this.listlanking = listlanking;
 	}
-	
-	
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
+	}
 	
 	
 }
