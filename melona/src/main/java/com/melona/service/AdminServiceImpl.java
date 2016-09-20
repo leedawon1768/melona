@@ -1,20 +1,30 @@
 package com.melona.service;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.melona.dao.AlbumDao;
+import com.melona.dao.MusicDao;
+import com.melona.dao.SingerDao;
+import com.melona.model.Singer;
 
 @Service
 public class AdminServiceImpl implements AdminService {
 	
-	// 가수 등록
+	@Autowired
+	private SingerDao singerDao;
+	@Autowired
+	private AlbumDao albumDao;
+	@Autowired
+	private MusicDao musicDao;
+
+	@Override
+	public List<Singer> getAllSingers() {
+		return singerDao.getAllSingers();
+	}
 	
-	// 앨범 등록
 	
-	// 음악 등록
-	
-	// 공연 등록
-	
-	// 공연장 등록
-	
-	// 이용권 등록
 
 }

@@ -7,6 +7,9 @@
 
 	<typeAliases>
 		<typeAlias type="com.melona.model.C_Seat" alias="Seat"/>
+		<typeAlias type="com.melona.model.Singer" alias="Singer"/>
+		<typeAlias type="com.melona.model.Album" alias="Album"/>
+		<typeAlias type="com.melona.model.Music" alias="Music"/>
 	</typeAliases>
 	
 	<mappers>
