@@ -14,5 +14,14 @@ public interface AdminService {
 	
 	// 가수 등록
 	void addSinger(Singer singer);
+	
+	// 가수 상세정보 조회
+	Singer getSingerDetail(int no);
+	
+	// 가수이름으로 검색
+	List<Singer> searchSinger(String keyword);
+	
+	// 가수정보 수정
+	void updateSinger(Singer singer);
 
 }

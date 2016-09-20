@@ -29,7 +29,19 @@
 		select 
 			singer_no as no, name, img 
 		from 
-			singer where singer_no = #{value}
+			singer 
+		where 
+			singer_no = #{value}
+	</select>
+	
+	<!-- 가수이름으로 가수 조회 -->
+	<select id="getSingersByName" parameterType="String" resultType="Singer">
+		select 
+			singer_no as no, name, img 
+		from 
+			singer
+		where
+			name like '%' || #{value} || '%'
 	</select>
 	
 	<!-- 가수 등록 -->
