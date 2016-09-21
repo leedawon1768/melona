@@ -58,7 +58,7 @@
 				</thead>
 				<tbody>
 				
-					<c:forEach var="album" items="${albums }" varStatus="status" begin="0" end="${albums.size()}" >
+					<c:forEach var="album" items="${albums }" varStatus="status" >
 						<tr>
 							<td id="count">${status.index +1 }</td>
 							<td id="no">${album.no }</td>
