@@ -20,6 +20,11 @@ img.singer-img, img.album-img {
 	width: 250px;
 	height: 250px;
 }
+
+img.lately-album-img {
+	width:200px;
+	height: 200px;
+}
 </style>
 <title>Melona</title>
 </head>
@@ -32,11 +37,19 @@ img.singer-img, img.album-img {
 
 	<hr>
 
-	<div class="col-sm-5">
+	<div class="col-sm-3">
 		<img src="resources/singer_img/${singer.img }.jpg" class="singer-img" />
-		<h3>${singer.name }</h3>
 	</div>
-	<div class="col-sm-5"></div>
-	<div class="col-sm-1"></div>
+	
+	<div class="col-sm-5">
+		<h4>[${singer.name }]</h4>
+	</div>
+	
+	<div class="col-sm-4">
+		<c:forEach var="album" items="${albumList }" varStatus="loop">
+			<h4>[최근앨범]</h4>
+			<img src="resources/album_jacket/${album.img }.jpg" class="lately-album-img" />
+		</c:forEach>
+	</div>
 </body>
 </html>

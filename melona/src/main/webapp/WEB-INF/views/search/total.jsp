@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<c:set var="current_page" value="search" />
+<c:set var="current_page" value="total" />
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -37,7 +37,7 @@ img.singer-img, img.album-img {
 			<!-- <ul class="nav nav-pills"> -->
 			<ul class="nav nav-tabs nav-justfield">
 				<li class="active"><a href="#searchTotal" data-toggle="tab">통합검색</a></li>
-				<li><a href="#singer" data-toggle="tab">아티스트</a></li>
+				<li><a href="searchSinger.do" data-toggle="tab">아티스트</a></li>
 				<li><a href="#music" data-toggle="tab">곡</a></li>
 				<li><a href="#album" data-toggle="tab">앨범</a></li>
 			</ul>
@@ -47,7 +47,7 @@ img.singer-img, img.album-img {
                     	<%@ include file="singer.jsp"%>
                     </div>
                     
-                    <hr style="border:solid 1.5x gray">
+                    <hr>
                     
                     <div class="row">
                     	<%@ include file="music.jsp"%>
@@ -60,9 +60,9 @@ img.singer-img, img.album-img {
                     </div>
                 </div>
                 
-				<div class="tab-pane fade in active" id="singer">
+				<%-- <div class="tab-pane fade" id="singer">
 					<%@ include file="singer.jsp"%>
-				</div>
+				</div> --%>
 				
 				<div class="tab-pane fade" id="music">
 					<%@ include file="music.jsp"%>
