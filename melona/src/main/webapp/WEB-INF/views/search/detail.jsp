@@ -9,17 +9,17 @@
 <link rel="stylesheet" type="text/css"
 	href="resources/bootstrap/css/bootstrap.css">
 <script type="text/javascript" src="resources/jquery/jquery.js"></script>
+<script src="resources/bootstrap/js/bootstrap.js"></script>
 <style type="text/css">
-	img.logo-img {
-		width: 200px;
-		height: 200px;
-	}
-	
-	img.singer-img, img.album-img {
-		width: 250px;
-		height: 350px;
-	}
-	
+img.logo-img {
+	width: 200px;
+	height: 200px;
+}
+
+img.singer-img, img.album-img {
+	width: 250px;
+	height: 250px;
+}
 </style>
 <title>Melona</title>
 </head>
@@ -30,33 +30,53 @@
 		</div>
 
 		<div class="row">
-			<br>
-			<div class="col-sm-1"></div>
-			<h2>
-				<b>아티스트채널</b>
-			</h2>
-			<br>
-			<div class="col-sm-10">
-				<img src="resources/singer_img/${singer.img }.jpg" class="singer-img"/>
-				<h3>${singer.name }</h3>
-			</div>
-			<div class="col-sm-1"></div>
-		</div>
-		
-		<div class="row">
-		<hr/>
-			<div class="col-sm-1"></div>
-			<c:forEach var="album" items="${albumList }" varStatus="loop">
-				<div class="col-sm-10">
-					<img src="resources/album_jacket/${album.img }.jpg" class="album-img" />
-					<p>${album.name }</p>
-				</div>
-			</c:forEach>
+			<span class="glyphicon glyphicon-play"></span>' '에 대한 검색결과입니다.
 
-			<div class="col-sm-1"></div>
+			<hr style="border: solid 1px gray">
+
+			<!-- <ul class="nav nav-pills"> -->
+			<ul class="nav nav-tabs nav-justfield">
+				<li class="active"><a href="#searchTotal" data-toggle="tab">통합검색</a></li>
+				<li><a href="#singer" data-toggle="tab">아티스트</a></li>
+				<li><a href="#music" data-toggle="tab">곡</a></li>
+				<li><a href="#album" data-toggle="tab">앨범</a></li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane fade in active" id="searchTotal">
+					<div class="row">
+                    	<%@ include file="singer.jsp"%>
+                    </div>
+                    
+                    <hr style="border:solid 1.5x gray">
+                    
+                    <div class="row">
+                    	<%@ include file="music.jsp"%>
+                    </div>
+                    
+                    <hr>
+                    
+                    <div class="row">
+                    	<%@ include file="album.jsp"%>
+                    </div>
+                </div>
+                
+				<div class="tab-pane fade in active" id="singer">
+					<%@ include file="singer.jsp"%>
+				</div>
+				
+				<div class="tab-pane fade" id="music">
+					<%@ include file="music.jsp"%>
+				</div>
+				
+				<div class="tab-pane fade" id="album">
+					<%@ include file="album.jsp"%>
+				</div>
+			</div>
 		</div>
 	</div>
 
+	<hr />
+	
 	<div id="footer">
 		<%@ include file="../melona/bottom.jsp"%>
 	</div>

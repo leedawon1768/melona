@@ -4,25 +4,32 @@ public class MyAlbum {
 
 	private int no;
 	private String name;
-	private Members memberNo;
+	private Members member;
+	
+	public MyAlbum() {}
+	
 	public int getNo() {
 		return no;
 	}
+	
 	public void setNo(int no) {
 		this.no = no;
 	}
+	
 	public String getName() {
 		return name;
 	}
+	
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Members getMemberNo() {
-		return memberNo;
-	}
-	public void setMemberNo(Members memberNo) {
-		this.memberNo = memberNo;
+
+	public Members getMember() {
+		return member;
 	}
 
+	public void setMember(Members member) {
+		this.member = member;
+	}
 	
 }
