@@ -58,6 +58,9 @@
 	   			<li class="${current_page eq 'login' ? 'active' : '' }"><a href="login.do"><span class="glyphicon glyphicon-log-in"></span> 로그인</a></li>
  			</c:when>
  			<c:otherwise>
+ 				<c:forEach var="members" items="${membersList }">
+					<c:out value="${members.id }" />
+				</c:forEach>
  				<li><a href="logout.do"><span class="glyphicon glyphicon-log-out"></span> 로그아웃</a></li>
  			</c:otherwise>
  		</c:choose>

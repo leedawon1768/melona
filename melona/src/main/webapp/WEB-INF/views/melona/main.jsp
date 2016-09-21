@@ -20,8 +20,6 @@
 			<%@ include file="menu.jsp"%>
 		</div>
 		
-		
-		
 	
 	</div>	
 		<div id="mid">
