@@ -6,6 +6,8 @@ public class Singer {
 	private String name;
 	private String img;
 	
+	public Singer (){}
+	
 	public int getNo() {
 		return no;
 	}

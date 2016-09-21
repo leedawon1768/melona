@@ -19,15 +19,18 @@
 		<div id="top">
 			<%@ include file="menu.jsp"%>
 		</div>
+		
+		<div id="mid">
+			<%@ include file="mid.jsp" %>	
+		</div>
+		
+		
+	
 	</div>	
 	
-	<div>
-		<!-- 구현 -->	
-	</div>
-	
-	<div id="footer">
-		<%@ include file="bottom.jsp"%>
-	</div>
+		<div id="footer">
+			<%@ include file="bottom.jsp"%>
+		</div>
 	
 </body>
 </html>

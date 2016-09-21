@@ -6,6 +6,8 @@ public class PlayList {
 	private Music musicNo;
 	private int listlanking;
 	
+	public PlayList (){}
+	
 	public MyAlbum getMyalbumNo() {
 		return myalbumNo;
 	}

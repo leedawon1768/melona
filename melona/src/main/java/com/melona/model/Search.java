@@ -9,6 +9,8 @@ public class Search {
 	private Date search_date;
 	private int cnt;
 	
+	public Search (){}
+	
 	public int getNo() {
 		return no;
 	}
