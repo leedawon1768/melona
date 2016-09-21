@@ -56,7 +56,7 @@ public class MelonaController {
 	
 	@RequestMapping(value="/register.do", method=RequestMethod.GET)
 	public String registerform() {
-		return "registerform";
+		return "melona/registerform";
 	}
 	
 	@RequestMapping(value="/register.do", method=RequestMethod.POST)
@@ -76,7 +76,7 @@ public class MelonaController {
 	
 	@RequestMapping(value="/login.do", method=RequestMethod.GET)
 	public String loginform() {
-		return "loginform";
+		return "melona/loginform";
 	}
 	
 	@RequestMapping(value="/login.do", method=RequestMethod.POST)

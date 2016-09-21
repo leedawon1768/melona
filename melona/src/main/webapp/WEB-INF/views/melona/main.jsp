@@ -20,13 +20,13 @@
 			<%@ include file="menu.jsp"%>
 		</div>
 		
-		<div id="mid">
-			<%@ include file="mid.jsp" %>	
-		</div>
 		
 		
 	
 	</div>	
+		<div id="mid">
+			<%@ include file="mid.jsp" %>	
+		</div>
 	
 		<div id="footer">
 			<%@ include file="bottom.jsp"%>

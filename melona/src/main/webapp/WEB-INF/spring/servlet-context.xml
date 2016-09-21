@@ -16,4 +16,21 @@
 		<property name="suffix" value=".jsp" />
 	</bean> 
 	
+	
+	<!-- interceptor -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/*.do"/>	
+			<mvc:exclude-mapping path="/main.do"/>	
+			<mvc:exclude-mapping path="/register.do"/>	
+			<mvc:exclude-mapping path="/login.do"/>	
+			<bean class="com.melona.controller.interceptor.LoginCheckInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
+	<mvc:annotation-driven>
+		<mvc:argument-resolvers>
+			<bean class="com.melona.controller.argumentResolver.LoginUserHandlerMethodArgumentResolver"></bean>
+		</mvc:argument-resolvers>
+	</mvc:annotation-driven>
 </beans>
