@@ -6,6 +6,7 @@ public class Members {
 	private String id;
 	private String password;
 	private String name;
+	private String address;
 	private String email;
 	private String contact;
 	private String images;
@@ -13,6 +14,17 @@ public class Members {
 	private String birth;
 	
 	public Members() {}
+
+	
+	public String getAddress() {
+		return address;
+	}
+
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
 
 	public int getMember_no() {
 		return member_no;
@@ -86,12 +98,14 @@ public class Members {
 		this.birth = birth;
 	}
 
+
 	@Override
 	public String toString() {
 		return "Members [member_no=" + member_no + ", id=" + id + ", password=" + password + ", name=" + name
-				+ ", email=" + email + ", contact=" + contact + ", images=" + images + ", gender=" + gender + ", birth="
-				+ birth + "]";
+				+ ", address=" + address + ", email=" + email + ", contact=" + contact + ", images=" + images
+				+ ", gender=" + gender + ", birth=" + birth + "]";
 	}
+
 	
 	
 }
