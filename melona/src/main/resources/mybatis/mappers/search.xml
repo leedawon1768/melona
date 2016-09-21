@@ -21,7 +21,7 @@
 			release_date as "releaseDate", 
 			img as "img", 
 			country as "country", 
-			genre_no as "genreNo.no"
+			genre_no as "genre.no"
 		from album
 		where 
 			album_no = (
