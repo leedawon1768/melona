@@ -1,6 +1,7 @@
 package com.melona.model;
 
 import java.util.Date;
+import java.util.List;
 
 public class Album {
 
@@ -9,8 +10,26 @@ public class Album {
 	private Date releaseDate;	
 	private String img;
 	private String country;
-	private Genre genreNo;
+	private Genre genre;
+	private Singer singer;
+	private List<Music> tracks;
 	
+	public Singer getSinger() {
+		return singer;
+	}
+
+	public void setSinger(Singer singer) {
+		this.singer = singer;
+	}
+
+	public List<Music> getTracks() {
+		return tracks;
+	}
+
+	public void setTracks(List<Music> tracks) {
+		this.tracks = tracks;
+	}
+
 	public Album() {}
 
 	public int getNo() {
@@ -53,12 +72,12 @@ public class Album {
 		this.country = country;
 	}
 
-	public Genre getGenreNo() {
-		return genreNo;
+	public Genre getGenre() {
+		return genre;
 	}
 
-	public void setGenreNo(Genre genreNo) {
-		this.genreNo = genreNo;
+	public void setGenre(Genre genre) {
+		this.genre = genre;
 	}
 	
 }

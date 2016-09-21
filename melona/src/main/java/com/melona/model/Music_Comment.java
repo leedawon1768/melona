@@ -7,8 +7,8 @@ public class Music_Comment {
 	private int no;
 	private String memo;
 	private Date regDate;
-	private Members membersNo;
-	private Music musicNo;
+	private Members members;
+	private Music music;
 	
 	public Music_Comment() {}
 
@@ -36,20 +36,20 @@ public class Music_Comment {
 		this.regDate = regDate;
 	}
 
-	public Members getMembersNo() {
-		return membersNo;
+	public Members getMembers() {
+		return members;
 	}
 
-	public void setMembersNo(Members membersNo) {
-		this.membersNo = membersNo;
+	public void setMembers(Members members) {
+		this.members = members;
 	}
 
-	public Music getMusicNo() {
-		return musicNo;
+	public Music getMusic() {
+		return music;
 	}
 
-	public void setMusicNo(Music musicNo) {
-		this.musicNo = musicNo;
+	public void setMusic(Music music) {
+		this.music = music;
 	}
-	
+
 }

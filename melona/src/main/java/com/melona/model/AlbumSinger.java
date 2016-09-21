@@ -2,25 +2,25 @@ package com.melona.model;
 
 public class AlbumSinger {
 
-	private Album albumNo;
-	private Singer singerNo;
+	private Album album;
+	private Singer singer;
 	
 	public AlbumSinger() {}
 
-	public Album getAlbumNo() {
-		return albumNo;
+	public Album getAlbum() {
+		return album;
 	}
 
-	public void setAlbumNo(Album albumNo) {
-		this.albumNo = albumNo;
+	public void setAlbum(Album album) {
+		this.album = album;
 	}
 
-	public Singer getSingerNo() {
-		return singerNo;
+	public Singer getSinger() {
+		return singer;
 	}
 
-	public void setSingerNo(Singer singerNo) {
-		this.singerNo = singerNo;
+	public void setSinger(Singer singer) {
+		this.singer = singer;
 	}
-	
+
 }

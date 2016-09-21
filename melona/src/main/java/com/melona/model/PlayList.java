@@ -2,27 +2,32 @@ package com.melona.model;
 
 public class PlayList {
 
-	private MyAlbum myalbumNo;
-	private Music musicNo;
+	private MyAlbum myalbum;
+	private Music music;
 	private int listlanking;
 	
-	public PlayList (){}
-	
-	public MyAlbum getMyalbumNo() {
-		return myalbumNo;
+	public PlayList () {}
+
+	public MyAlbum getMyalbum() {
+		return myalbum;
 	}
-	public void setMyalbumNo(MyAlbum myalbumNo) {
-		this.myalbumNo = myalbumNo;
+
+	public void setMyalbum(MyAlbum myalbum) {
+		this.myalbum = myalbum;
 	}
-	public Music getMusicNo() {
-		return musicNo;
+
+	public Music getMusic() {
+		return music;
 	}
-	public void setMusicNo(Music musicNo) {
-		this.musicNo = musicNo;
+
+	public void setMusic(Music music) {
+		this.music = music;
 	}
+
 	public int getListlanking() {
 		return listlanking;
 	}
+
 	public void setListlanking(int listlanking) {
 		this.listlanking = listlanking;
 	}

@@ -7,7 +7,7 @@ public class Music_Singer {
 	private int no;
 	private String memo;
 	private Date regDate;
-	private Mqna mqnaNo;
+	private Mqna mqna;
 	
 	public Music_Singer() {}
 
@@ -35,12 +35,12 @@ public class Music_Singer {
 		this.regDate = regDate;
 	}
 
-	public Mqna getMqnaNo() {
-		return mqnaNo;
+	public Mqna getMqna() {
+		return mqna;
 	}
 
-	public void setMqnaNo(Mqna mqnaNo) {
-		this.mqnaNo = mqnaNo;
+	public void setMqna(Mqna mqna) {
+		this.mqna = mqna;
 	}
 
 }
