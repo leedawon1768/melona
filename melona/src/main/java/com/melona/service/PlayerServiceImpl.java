@@ -20,4 +20,15 @@ public class PlayerServiceImpl implements PlayerService {
 		return albums;
 	}
 
+	@Override
+	public void deleteMyAlbumByNo(int listNo) {
+		palyerdao.deleteMyAlbumByNo1(listNo);
+		palyerdao.deleteMyAlbumByNo2(listNo);
+	}
+
+	@Override
+	public void addPlayList(String listname) {
+		palyerdao.addPlayList(listname);
+	}
+
 }

@@ -12,6 +12,17 @@
 		order by p.listlanking asc
 	</select>
 	
+	<delete id="deleteMyAlbumByNo1" parameterType="int">
+		delete from playlist where myalbum_no = ${value}
+	</delete>
+	
+	<delete id="deleteMyAlbumByNo2" parameterType="int">
+		delete from myalbum where myalbum_no = ${value}
+	</delete>
+	
+	<insert id="addPlayList" parameterType="String">
+		insert into myalbum 
+	</insert>
 	
 	
 </mapper>

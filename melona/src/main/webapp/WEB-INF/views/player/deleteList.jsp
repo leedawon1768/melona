@@ -17,6 +17,31 @@
 	td {text-align: center; }
 </style>
 <title>Melona</title>
+<script type="text/javascript">
+$(function() {
+	
+	$(document).on("click", "#btn-top, #btn-up, #btn-down, #btn-bottom",function(){
+		var rows = $("tbody :radio:checked").parent().parent();
+			
+		if ($(this).is("#btn-up")) {
+			rows.insertBefore(rows.prev());
+			
+		} else if ($(this).is("#btn-down")) {
+			rows.insertAfter(rows.next());
+			
+		}
+		else if ($(this).is("#btn-top")) {
+			rows.insertBefore($("table #playlist tr:first"));
+			
+		}else {
+			rows.insertAfter($("table #playlist tr:last"));
+				
+			
+		}
+	});
+});
+
+</script>
 </head>
 <body>
 	<div class="container">
@@ -43,10 +68,10 @@
 			</div>
 			
 			<div class="well">
-				<button><span class="glyphicon glyphicon-triangle-top"></span></button>
-				<button><span class="glyphicon glyphicon-chevron-up"></span></button>
-				<button><span class="glyphicon glyphicon-chevron-down"></span></button>
-				<button><span class="glyphicon glyphicon-triangle-bottom"></span></button>
+				<button id="btn-top" ><span class="glyphicon glyphicon-triangle-top"></span></button>
+				<button id="btn-up" ><span class="glyphicon glyphicon-chevron-up"></span></button>
+				<button id="btn-down"><span class="glyphicon glyphicon-chevron-down"></span></button>
+				<button id="btn-bottom" ><span class="glyphicon glyphicon-triangle-bottom"></span></button>
 			</div>
 			<table class="table">
 				<colgroup>
@@ -61,20 +86,19 @@
 						<th>삭제</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody id="playlist">
 					<c:forEach var="album" items="${albums }" varStatus="status"  begin="0" end="${albums.size() }"  >
 						<tr>
-							<td><input type="checkbox" id="${status.index }"></td>
-							<td>${album.no }</td>
-							<td><a href="" class="btn btn-xs btn-danger">삭제</a></td>
+							<td id="index"><input type="radio" id="${status.index }"></td>
+							<td id="title">${album.no }</td>
+							<td><a href="deleteL.do?no=${album.no }" class="btn btn-xs btn-danger">삭제</a></td>
 						</tr>
 					</c:forEach>
 				</tbody>
 			</table>
 			<div class="row text-center">
-				<img src="resources/icons/순서변경완료버튼.png" alt="">
+				<a href=""><img id="" src="resources/icons/순서변경완료버튼.png" alt=""></a>
 			</div>
-			
 		</div>
 		<div class="col-sm-1"></div>
 	</div>
