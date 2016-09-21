@@ -15,13 +15,10 @@
 	td {text-align: center; }
 	table { margin-top: 15px;}
 	#makePL {margin-left: 8px;}
+	#count {font-size: 70px; color: gray}
+	#bt {margin-top: 35px;}
 </style>
 <title>Melona</title>
-<script type="text/javascript">
-	
-	var albums = ${albums };
-	
-</script>
 </head>
 <body>
 	<div class="container">
@@ -39,7 +36,7 @@
 			</div>
 			
 			<div class="row">
-				<span>총 ?개 </span>
+				<span>총 ${albums.size() }개 </span>
 				<a href="addplaylist.do" class="btn btn-success pull-right" id="makePL"><span class="glyphicon glyphicon-headphones"></span> 플레이이스트 만들기</a>
 				<a href="deleteList.do" class="btn btn-warning pull-right">플레이리스트 순서변경/삭제</a>
 			</div>
@@ -60,45 +57,16 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
-					<c:forEach var="albums" items="${albums }" varStatus="status" >
+				
+					<c:forEach var="album" items="${albums }" varStatus="status" begin="0" end="${albums.size()}" >
 						<tr>
-							<td>${status.index +1 }</td>
-							<td>${albums.no }</td>
-							<td></td>
-							<td></td>
+							<td id="count">${status.index +1 }</td>
+							<td id="no">${album.no }</td>
+							<td><a id="bt" href="" class="btn btn-xs btn-success">듣기</a></td>
+							<td><a id="bt" href="" class="btn btn-xs btn-danger">다운</a></td>
 						</tr>
 					</c:forEach>
+					
 				</tbody>
 			</table>
 			

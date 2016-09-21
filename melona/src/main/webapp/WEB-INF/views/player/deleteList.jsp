@@ -56,27 +56,19 @@
 				</colgroup>
 				<thead>
 					<tr>
-						<th></th>
+						<th>no</th>
 						<th>플레이리스트명</th>
 						<th>삭제</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td><input type="checkbox"></td>
-						<td>1</td>
-						<td>1</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox"></td>
-						<td>1</td>
-						<td>1</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox"></td>
-						<td>1</td>
-						<td>1</td>
-					</tr>
+					<c:forEach var="album" items="${albums }" varStatus="status"  begin="0" end="${albums.size() }"  >
+						<tr>
+							<td><input type="checkbox" id="${status.index }"></td>
+							<td>${album.no }</td>
+							<td><a href="" class="btn btn-xs btn-danger">삭제</a></td>
+						</tr>
+					</c:forEach>
 				</tbody>
 			</table>
 			<div class="row text-center">
