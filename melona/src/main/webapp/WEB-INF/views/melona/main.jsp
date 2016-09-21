@@ -25,12 +25,12 @@
 		</div>
 		
 		
-		<div id="footer">
-			<%@ include file="bottom.jsp"%>
-		</div>
 	
 	</div>	
 	
+		<div id="footer">
+			<%@ include file="bottom.jsp"%>
+		</div>
 	
 </body>
 </html>
