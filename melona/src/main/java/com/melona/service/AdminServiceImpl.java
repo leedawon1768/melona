@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.melona.dao.AlbumDao;
 import com.melona.dao.MusicDao;
 import com.melona.dao.SingerDao;
+import com.melona.model.Album;
 import com.melona.model.Singer;
 
 @Service
@@ -20,6 +21,10 @@ public class AdminServiceImpl implements AdminService {
 	@Autowired
 	private MusicDao musicDao;
 
+	/*
+	 * 	가수
+	 */
+	
 	@Override
 	public List<Singer> getAllSingers() {
 		return singerDao.getAllSingers();
@@ -48,6 +53,15 @@ public class AdminServiceImpl implements AdminService {
 	@Override
 	public void updateSinger(Singer singer) {
 		singerDao.updateSinger(singer);
+	}
+
+	/*
+	 * 	앨범
+	 */
+	
+	@Override
+	public List<Album> getAllAlbums() {
+		return albumDao.getAllAlbums();
 	}
 	
 }

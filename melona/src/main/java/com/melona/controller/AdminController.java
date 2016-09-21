@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.melona.form.SingerForm;
+import com.melona.model.Album;
 import com.melona.model.Singer;
 import com.melona.service.AdminService;
 
@@ -94,7 +95,10 @@ public class AdminController {
 	 */
 	
 	@RequestMapping("/admin/album.do")
-	public String AlbumList() {
+	public String AlbumList(Model model) {
+		List<Album> albumList = adminService.getAllAlbums();
+		model.addAttribute("albumList", albumList);
+		
 		return "admin/album";
 	}
 	

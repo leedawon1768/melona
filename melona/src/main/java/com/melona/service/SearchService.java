@@ -8,7 +8,10 @@ import com.melona.model.Music;
 import com.melona.model.Singer;
 
 public interface SearchService {
-
+	
+	// search 테이블에 검색키워드, 검색시간 저장
+	void addSearchKeyword(String keyword);
+	
 	// 검색키워드로 가수정보를 조회
 	Singer getSinger(String keyword);
 	

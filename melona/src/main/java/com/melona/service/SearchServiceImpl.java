@@ -18,6 +18,11 @@ public class SearchServiceImpl implements SearchService {
 	private SearchDao searchDao;
 	
 	@Override
+	public void addSearchKeyword(String keyword) {
+		searchDao.addSearchKeyword(keyword);
+	}
+	
+	@Override
 	public Singer getSinger(String keyword) {
 		Singer searchSinger = searchDao.getSinger(keyword);
 		
@@ -50,4 +55,5 @@ public class SearchServiceImpl implements SearchService {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
 }

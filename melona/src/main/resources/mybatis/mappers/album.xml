@@ -5,7 +5,7 @@
 <mapper namespace="com.melona.dao.AlbumDao">
 
 	<!-- 모든 앨범 목록 조회 -->
-	<select id="getAllAlbum" resultType="Album">
+	<select id="getAllAlbums" resultType="Album">
 		select
 			a.album_no		as "no", 
 			a.name, 
@@ -14,8 +14,8 @@
 			a.country, 
 			a.genre_no		as "genre.no", 
 			g.name			as "genre.name", 
-			s.singer_no		as "", 
-			i.name
+			s.singer_no		as "singer.no", 
+			i.name			as "singer.name"
 		from 
 			album a, album_singer s, genre g, singer i
 		where 
@@ -30,7 +30,7 @@
 	
 	<!-- 앨범번호로 앨범 조회 -->
 	<select id="getAlbumByNo">
-	
+		select * from album
 	</select>
 
 	
