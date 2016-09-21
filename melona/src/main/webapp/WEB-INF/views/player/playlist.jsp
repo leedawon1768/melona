@@ -15,11 +15,10 @@
 	td {text-align: center; }
 	table { margin-top: 15px;}
 	#makePL {margin-left: 8px;}
+	#count {font-size: 70px; color: gray}
+	#bt {margin-top: 35px;}
 </style>
 <title>Melona</title>
-<script type="text/javascript">
-
-</script>
 </head>
 <body>
 	<div class="container">
@@ -37,7 +36,7 @@
 			</div>
 			
 			<div class="row">
-				<span>총 ?개 </span>
+				<span>총 ${albums.size() }개 </span>
 				<a href="addplaylist.do" class="btn btn-success pull-right" id="makePL"><span class="glyphicon glyphicon-headphones"></span> 플레이이스트 만들기</a>
 				<a href="deleteList.do" class="btn btn-warning pull-right">플레이리스트 순서변경/삭제</a>
 			</div>
@@ -46,55 +45,28 @@
 				<thead>
 				<colgroup>
 					<col width="15%">
-					<col width="50%">
-					<col width="15%">
+					<col width="*%">
 					<col width="10%">
 					<col width="10%">
 				</colgroup>
 					<tr>
 						<th>no</th>
 						<th>플레이리스트 정보</th>
-						<th>좋아요</th>
 						<th>듣기</th>
 						<th>전체다운</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
-					<tr>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-						<td>a</td>
-					</tr>
+				
+					<c:forEach var="album" items="${albums }" varStatus="status" begin="0" end="${albums.size()}" >
+						<tr>
+							<td id="count">${status.index +1 }</td>
+							<td id="no">${album.no }</td>
+							<td><a id="bt" href="" class="btn btn-xs btn-success">듣기</a></td>
+							<td><a id="bt" href="" class="btn btn-xs btn-danger">다운</a></td>
+						</tr>
+					</c:forEach>
+					
 				</tbody>
 			</table>
 			
