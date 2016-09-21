@@ -53,7 +53,7 @@
 	<div class="col-sm-2"></div>
 	<ul class="nav navbar-nav navbar-right">
  		<c:choose>
- 			<c:when test="${empty LOGIN_USER }">
+ 			<c:when test="${empty LOGIN_MEMBER }">
 	   			<li class="${current_page eq 'register' ? 'active' : '' }"><a href="register.do"><span class="glyphicon glyphicon-user"></span> 회원가입</a></li>
 	   			<li class="${current_page eq 'login' ? 'active' : '' }"><a href="login.do"><span class="glyphicon glyphicon-log-in"></span> 로그인</a></li>
  			</c:when>
