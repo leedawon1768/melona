@@ -45,7 +45,7 @@
 		</div>
 		
 		<div class="row">
-		<c:forEach var="singer" items="${singerList }" varStatus="loop">
+		<c:forEach var="singer" items="${singerList }">
 		    <div class="col-sm-4 text-center" style="margin-top: 20px; margin-bottom: 20px">
 		    	<div class="text-center" style="width: 352px; height: 350px; padding: 10px">
 					<img src="/resources/singer_img/${singer.img }.jpg" class="img-rounded" width="352px" height="348px">

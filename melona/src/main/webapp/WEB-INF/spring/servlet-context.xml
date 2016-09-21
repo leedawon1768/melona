@@ -24,6 +24,7 @@
 			<mvc:exclude-mapping path="/main.do"/>	
 			<mvc:exclude-mapping path="/register.do"/>	
 			<mvc:exclude-mapping path="/login.do"/>	
+			<mvc:exclude-mapping path="/admin/*.do"/>	
 			<bean class="com.melona.controller.interceptor.LoginCheckInterceptor" />
 		</mvc:interceptor>
 	</mvc:interceptors>

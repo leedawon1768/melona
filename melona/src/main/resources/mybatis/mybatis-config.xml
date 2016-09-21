@@ -14,6 +14,7 @@
 		<typeAlias type="com.melona.model.C_Concert" alias="C_Concert"/>
 		<typeAlias type="com.melona.model.MyAlbum" alias="MyAlbum"/>
 		<typeAlias type="com.melona.model.Members" alias="Members"/>
+		<typeAlias type="com.melona.model.Genre" alias="Genre"/>
 
 	</typeAliases>
 	
@@ -26,6 +27,7 @@
 		<mapper resource="mybatis/mappers/search.xml" />
 		<mapper resource="mybatis/mappers/playlist.xml" />
 		<mapper resource="mybatis/mappers/member.xml" />
+		<mapper resource="mybatis/mappers/genre.xml" />
 
 	</mappers>
 	

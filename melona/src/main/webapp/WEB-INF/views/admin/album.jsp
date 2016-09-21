@@ -47,23 +47,24 @@
 		<div class="row">
 		<br>
 		<!-- 
-			Album : no, name, releaseDate(발매일), img, country(발매국가), genreNo 
-			AlbumSinger : AlbumNo, SingerNo
+			Album : no, name, releaseDate(발매일), img, country(발매국가), genre, singer, tracks
+			AlbumSinger : Album, Singer
 		-->
+		<c:forEach var="album" items="${albumList }">
 			<div class="col-sm-6 panel panel-default" >
 				<div class="col-sm-6">
-					<img alt="" src="/resources/singer_img/2PM.jpg" class="img-rounded" width="200px" height="200px" style="margin-top: 25px; margin-bottom: 25px">
+					<img alt="" src="/resources/album_jacket/${album.name }.jpg" class="img-rounded" width="200px" height="200px" style="margin-top: 25px; margin-bottom: 25px">
 				</div>
 				<div>
-					<dl class="slfix">
-						<dt style="float: left">아티스트</dt><dd>2PM</dd>
-						<dt style="float: left">장르</dt><dd>댄스</dd>
-						<dt style="float: left">발매일</dt><dd>2016.09.21</dd>
-						<dt style="float: left">발매국가</dt><dd>한국</dd>
+					<dl>
+						<dt style="float: left">아티스트</dt><dd>${album.singer }</dd>
+						<dt style="float: left">장르</dt><dd>${album.genre }</dd>
+						<dt style="float: left">발매일</dt><dd>${album.releaseDate }</dd>
+						<dt style="float: left">발매국가</dt><dd>${album.country }</dd>
 					</dl>
 				</div>
 			</div>
-			
+		</c:forEach>
 			
 		</div>
 	</div>

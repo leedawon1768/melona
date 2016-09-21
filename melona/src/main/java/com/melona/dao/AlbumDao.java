@@ -6,10 +6,10 @@ import com.melona.model.Album;
 
 public interface AlbumDao {
 	
-	// Album : no, name, releaseDate(발매일), img, country(발매국가), genreNo
+	// Album : no, name, releaseDate(발매일), img, country(발매국가), genre, singer, tracks
 	
 	// 모든 앨범 목록 조회
-	List<Album> getAllAlbum();
+	List<Album> getAllAlbums();
 	
 	// 앨범번호로 앨범 조회
 	Album getAlbumByNo(int no);
