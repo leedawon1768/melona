@@ -4,6 +4,11 @@
 
 <mapper namespace="com.melona.dao.SearchDao">
 
+	<insert id="addSearchKeyword" parameterType="String">
+		insert into search(search_no, keyword, search_date)
+		values(search_seq.nextval, #{value}, sysdate)
+	</insert>
+
 	<select id="getSinger" parameterType="String" resultType="Singer">
 		select
 			singer_no as "no",
@@ -33,9 +38,11 @@
 			)
 	</select>
 
-	<!-- 
 	<select id="getMusicByAlbumNo" parameterType="int" resultType="Music"> 
+		
 	</select> 
+	
+	<!-- 
 	<select id="getConcerts" parameterType="int" resultType="C_Concert"> 
 	</select> -->
 

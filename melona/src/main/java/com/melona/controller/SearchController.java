@@ -26,12 +26,17 @@ public class SearchController {
 	// 검색결과(아티스트 상세정보) 페이지
 	@RequestMapping("/search.do")
 	public String search(Model model) {
+		//searchService.addSearchKeyword(keyword);
+		searchService.addSearchKeyword("박재범");
 		
+		//Singer searchSinger = searchService.getSinger(keyword);
 		Singer searchSinger = searchService.getSinger("박재범");
 		model.addAttribute("singer", searchSinger);
 		
 		List<Album> searchAlbum = searchService.getAlbumBySingerNo(searchSinger.getNo());
 		model.addAttribute("albumList", searchAlbum);
+		
+		//List<Music> searchMusic = searchService.getMusicByAlbumNo(searc)
 		
 		return "search/detail";
 	}

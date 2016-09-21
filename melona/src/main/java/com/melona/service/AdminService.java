@@ -2,9 +2,14 @@ package com.melona.service;
 
 import java.util.List;
 
+import com.melona.model.Album;
 import com.melona.model.Singer;
 
 public interface AdminService {
+	
+	/*
+	 * 	가수
+	 */
 	
 	// 모든 가수 목록 조회 (번호순)
 	List<Singer> getAllSingers();
@@ -23,5 +28,12 @@ public interface AdminService {
 	
 	// 가수정보 수정
 	void updateSinger(Singer singer);
+	
+	/*
+	 * 	앨범
+	 */
+	
+	// 모든 앨범 목록 조회
+	List<Album> getAllAlbums();
 
 }
