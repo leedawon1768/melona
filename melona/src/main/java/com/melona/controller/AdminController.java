@@ -17,15 +17,15 @@ import com.melona.service.AdminService;
 @Controller
 public class AdminController {
 	
+	@Autowired
+	private AdminService adminService;
+	
 	/*
 	 *	가수 
 	 */
 	
-	@Autowired
-	private AdminService adminService;
-	
 	// 모든 가수 목록 조회 (번호순)
-	@RequestMapping(value={"/admin/singer.do","/admin/main.do", "sortSingerByNo.do"})
+	@RequestMapping(value={"/admin/singer.do","/admin/main.do", "/admin/sortSingerByNo.do"})
 	public String SingerList(Model model) {
 		List<Singer> singerList = adminService.getAllSingers();
 		model.addAttribute("singerList", singerList);
@@ -92,5 +92,19 @@ public class AdminController {
 	/*
 	 * 	앨범
 	 */
+	
+	@RequestMapping("/admin/album.do")
+	public String AlbumList() {
+		return "admin/album";
+	}
+	
+	/*
+	 * 	노래
+	 */
+	
+	@RequestMapping("/admin/music.do")
+	public String MusicList() {
+		return "admin/music";
+	}
 
 }

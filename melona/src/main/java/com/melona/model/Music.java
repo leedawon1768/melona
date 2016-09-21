@@ -8,7 +8,8 @@ public class Music {
 	private String lyric;
 	private int likes;
 	private String musicvideo;
-	private Album albumNo;
+	private Album album;
+	private Singer singer;
 	
 	public Music() {}
 
@@ -60,12 +61,20 @@ public class Music {
 		this.musicvideo = musicvideo;
 	}
 
-	public Album getAlbumNo() {
-		return albumNo;
+	public Album getAlbum() {
+		return album;
 	}
 
-	public void setAlbumNo(Album albumNo) {
-		this.albumNo = albumNo;
+	public void setAlbum(Album album) {
+		this.album = album;
+	}
+
+	public Singer getSinger() {
+		return singer;
+	}
+
+	public void setSinger(Singer singer) {
+		this.singer = singer;
 	}
 
 }

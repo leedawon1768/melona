@@ -3,7 +3,7 @@ package com.melona.model;
 public class C_Seat {
 
 	private int no;
-	private C_Stage cstageNo;
+	private C_Stage cstage;
 	private String grade;
 	private int price;
 	private String position;
@@ -19,12 +19,12 @@ public class C_Seat {
 		this.no = no;
 	}
 
-	public C_Stage getCstageNo() {
-		return cstageNo;
+	public C_Stage getCstage() {
+		return cstage;
 	}
 
-	public void setCstageNo(C_Stage cstageNo) {
-		this.cstageNo = cstageNo;
+	public void setCstage(C_Stage cstage) {
+		this.cstage = cstage;
 	}
 
 	public String getGrade() {

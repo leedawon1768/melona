@@ -4,5 +4,34 @@
 
 <mapper namespace="com.melona.dao.AlbumDao">
 
+	<!-- 모든 앨범 목록 조회 -->
+	<select id="getAllAlbum" resultType="Album">
+		select
+			a.album_no		as "no", 
+			a.name, 
+			a.release_date	as "releaseDate", 
+			a.img, 
+			a.country, 
+			a.genre_no		as "genre.no", 
+			g.name			as "genre.name", 
+			s.singer_no		as "", 
+			i.name
+		from 
+			album a, album_singer s, genre g, singer i
+		where 
+			a.album_no = s.album_no
+		and 
+			a.genre_no = g.genre_no
+		and 
+			s.singer_no = i.singer_no
+		order by 
+			album_no asc
+	</select>
+	
+	<!-- 앨범번호로 앨범 조회 -->
+	<select id="getAlbumByNo">
+	
+	</select>
+
 	
 </mapper>
