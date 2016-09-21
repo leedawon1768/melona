@@ -66,7 +66,7 @@
 						<tr>
 							<td><input type="checkbox" id="${status.index }"></td>
 							<td>${album.no }</td>
-							<td><a href="" class="btn btn-xs btn-danger">삭제</a></td>
+							<td><a href="deleteL.do?no=${album.no }" class="btn btn-xs btn-danger">삭제</a></td>
 						</tr>
 					</c:forEach>
 				</tbody>
