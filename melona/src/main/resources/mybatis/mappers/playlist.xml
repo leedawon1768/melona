@@ -21,7 +21,7 @@
 	</delete>
 	
 	<insert id="addPlayList" parameterType="String">
-		insert into myalbum 
+		insert into myalbum insert into myalbum
 	</insert>
 	
 	
