@@ -13,7 +13,7 @@
 	
 	<select id="getMemberById" parameterType="string" resultType="Members">
 		select
-			member_no 		as no,
+			member_no 		as member_no,
 			id 				as id,
 			password 		as password,
 			name	 		as name,
