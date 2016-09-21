@@ -27,7 +27,7 @@
 		            <li><a href="stage.do">공연장</a></li>
 		        </ul>
 			</li>
-			<li class="${current_page eq '' ? 'active' : '' }">
+			<li class="${current_page eq 'stats' ? 'active' : '' }">
 				<a href="stats.do">통계</a>
 			</li>
 			<li class="${current_page eq '' ? 'active' : '' }">
