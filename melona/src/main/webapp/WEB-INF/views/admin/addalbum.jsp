@@ -36,7 +36,7 @@
 					</div>
 					<div class="form-group">
 						<label>장르</label>
-						<select name="genre" id="genre">
+						<select class="form-control" name="genre" id="genre">
 						    <option value="" selected="selected">선택해주세요</option>
 						    <option value=""></option>
 						    <option value=""></option>
@@ -46,11 +46,11 @@
 					</div>
 					<div class="form-group">
 						<label>발매일</label>
-						<input type="text" class="form-control" name="releaseDate" id="releaseDate"/>
+						<input type="date" class="form-control" name="releaseDate" id="releaseDate"/>
 					</div>
 					<div class="form-group">
 						<label>발매국가</label>
-						<select name="country" id="country">
+						<select class="form-control" name="country" id="country">
 						    <option value="" selected="selected">선택해주세요</option>
 						    <option value="korea">한국</option>
 						    <option value="japan">일본</option>
@@ -67,7 +67,7 @@
 			</form>
 			<div class="panel-footer text-right">
 				<input type="submit" class="btn btn-success" value="등록">
-				<a href="main.do" class="btn btn-default">취소</a>
+				<a href="album.do" class="btn btn-default">취소</a>
 			</div>
 		</div>
 	</div>

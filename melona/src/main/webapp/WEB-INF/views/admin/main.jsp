@@ -47,11 +47,12 @@
 		<div class="row">
 		<c:forEach var="singer" items="${singerList }">
 		    <div class="col-sm-4 text-center" style="margin-top: 20px; margin-bottom: 20px">
+		    	<small>No.${singer.no }</small>
 		    	<div class="text-center" style="width: 352px; height: 350px; padding: 10px">
 					<img src="/resources/singer_img/${singer.img }.jpg" class="img-rounded" width="352px" height="348px">
 				</div>
-				<p>
-		      	<h3>${singer.name }</h3>
+				<br>
+		      	<p style="font-size: x-large;"><b>${singer.name }</b></p>
 		      	<c:url var="updateURL" value="updateSinger.do">
 					<c:param name="no" value="${singer.no }" />
 				</c:url>

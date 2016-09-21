@@ -3,6 +3,7 @@ package com.melona.service;
 import java.util.List;
 
 import com.melona.model.Album;
+import com.melona.model.Genre;
 import com.melona.model.Singer;
 
 public interface AdminService {
@@ -35,5 +36,12 @@ public interface AdminService {
 	
 	// 모든 앨범 목록 조회
 	List<Album> getAllAlbums();
+	
+	/*
+	 * 	장르
+	 */
+	
+	// 모든 장르 조회
+	List<Genre> getAllGenres();
 
 }

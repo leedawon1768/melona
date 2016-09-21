@@ -25,7 +25,7 @@
 		and 
 			s.singer_no = i.singer_no
 		order by 
-			album_no asc
+			a.album_no asc
 	</select>
 	
 	<!-- 앨범번호로 앨범 조회 -->

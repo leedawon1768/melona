@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.melona.form.SingerForm;
 import com.melona.model.Album;
+import com.melona.model.Genre;
 import com.melona.model.Singer;
 import com.melona.service.AdminService;
 
@@ -102,6 +103,14 @@ public class AdminController {
 		return "admin/album";
 	}
 	
+	@RequestMapping("/admin/addAlbum.do")
+	public String AddAlbumForm(Model model) {
+		List<Genre> genreList = adminService.getAllGenres();
+		model.addAttribute("genreList", genreList);
+		
+		return "admin/addalbum";
+	}
+	
 	/*
 	 * 	노래
 	 */
@@ -110,5 +119,7 @@ public class AdminController {
 	public String MusicList() {
 		return "admin/music";
 	}
+	
+	
 
 }

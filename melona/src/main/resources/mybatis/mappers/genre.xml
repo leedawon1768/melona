@@ -2,7 +2,15 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.melona.dao.AdminDao">
+<mapper namespace="com.melona.dao.GenreDao">
+
+	<!-- 모든 장르 조회 -->
+	<select id="getAllGenres" resultType="Genre">
+		select
+			genre_no as no, name
+		from 
+			genre
+	</select>
 
 	
 </mapper>
