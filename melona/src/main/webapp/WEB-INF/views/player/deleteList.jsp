@@ -73,6 +73,7 @@ $(function() {
             <button id="btn-down"><span class="glyphicon glyphicon-chevron-down"></span></button>
             <button id="btn-bottom" ><span class="glyphicon glyphicon-triangle-bottom"></span></button>
          </div>
+         <form role="form" method="post" action="deleteList.do">
          <table class="table">
             <colgroup>
                <col width="5%">
@@ -89,16 +90,17 @@ $(function() {
             <tbody id="playlist">
                <c:forEach var="album" items="${albums }" varStatus="status"  begin="0" end="${albums.size() }"  >
                   <tr>
-                     <td id="index"><input type="radio" id="${status.index }"></td>
+                     <td id="index"><input type="radio" name="chk" id="${status.index }"></td>
                      <td id="title">${album.no }</td>
-                     <td><a href="deleteL.do?no=${album.no }" class="btn btn-xs btn-danger">삭제</a></td>
+                     <td><input type="text" class="hidden" name="listNo" value="${album.no }"><a href="deleteL.do?no=${album.no }" class="btn btn-xs btn-danger">삭제</a></td>
                   </tr>
                </c:forEach>
             </tbody>
          </table>
          <div class="row text-center">
-            <a href=""><img id="" src="resources/icons/순서변경완료버튼.png" alt=""></a>
+         	<input type="submit" class="btn btn-success" value="순서변경완료">
          </div>
+         </form>
       </div>
       <div class="col-sm-1"></div>
    </div>

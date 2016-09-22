@@ -5,6 +5,7 @@ public class MyAlbum {
 	private int no;
 	private String name;
 	private Members member;
+	private int listrank;
 	
 	public MyAlbum() {}
 	
@@ -31,5 +32,16 @@ public class MyAlbum {
 	public void setMember(Members member) {
 		this.member = member;
 	}
+
+	public int getListrank() {
+		return listrank;
+	}
+
+	public void setListrank(int listrank) {
+		this.listrank = listrank;
+	}
+	
+
+	
 	
 }

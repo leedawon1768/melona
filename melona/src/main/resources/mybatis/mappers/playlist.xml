@@ -23,7 +23,10 @@
 		insert into myalbum (myalbum_no, name, member_no, listrank)
 		values(my_seq.nextval,#{name },#{member.member_no },0)
 	</insert>
-
+	
+	<update id="adjustPlayList" parameterType="MyAlbum">
+		 update myalbum set listrank =#{listrank } where myalbum_no=#{no }
+	</update>
 	
 	
 </mapper>

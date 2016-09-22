@@ -15,4 +15,6 @@ public interface PlayerDao {
 	void deleteMyAlbumByNo2(int listNo);
 	// playlist 생성하기
 	void addPlayList(MyAlbum listname);
+	// list 순서 변경하기
+	void adjustPlayList(MyAlbum myalbum);
 }

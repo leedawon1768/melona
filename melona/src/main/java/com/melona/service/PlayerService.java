@@ -14,4 +14,6 @@ public interface PlayerService {
 	void deleteMyAlbumByNo(int listNo);
 	// 플레이리스트 생성하기
 	void addPlayList(MyAlbum myalbum);
+
+	void adjustPlayList(MyAlbum myalbum);
 }

@@ -1,6 +1,7 @@
 package com.melona.controller;
 
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -44,7 +45,7 @@ public class PlaylistController {
 		}
 		
 	}
-	@RequestMapping("/deleteList.do")
+	@RequestMapping(value="/deleteList.do", method=RequestMethod.GET)
 	public String deleteList(Model model, HttpServletRequest request) {
 		HttpSession session = request.getSession();
 		Members loginMember = (Members)session.getAttribute("LOGIN_MEMBER");
@@ -59,6 +60,22 @@ public class PlaylistController {
 		}
 	}
 	
+	
+	
+	@RequestMapping(value="/deleteList.do", method=RequestMethod.POST)
+	public String deleteList2(@RequestParam(name="listNo")ArrayList<String> list) {
+		
+		for(int i=0;i<list.size();i++){
+			int no = Integer.parseInt(list.get(i));
+			MyAlbum myalbum = new MyAlbum();
+			myalbum.setNo(no);
+			myalbum.setListrank(i+1);
+			playerService.adjustPlayList(myalbum);
+			System.out.println(no+"------------------------------------------------------------------------------------------------------------------");
+		}
+		
+		return "redirect:/playlist.do";
+	}
 
 	@RequestMapping("/deleteL.do")
 	public String deleteList(@RequestParam(name="no") int listNo) {
@@ -68,7 +85,7 @@ public class PlaylistController {
 		return "redirect:/deleteList.do";
 	}
 	
-	@RequestMapping("/addplaylist.do")
+	@RequestMapping(value="/addplaylist.do", method=RequestMethod.GET)
 	public String addplaylist() {
 
 		return "player/addplaylist";

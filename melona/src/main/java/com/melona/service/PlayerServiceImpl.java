@@ -32,4 +32,11 @@ public class PlayerServiceImpl implements PlayerService {
 	public void addPlayList(MyAlbum listname) {
 		palyerdao.addPlayList(listname);
 	}
+
+
+	@Override
+	public void adjustPlayList(MyAlbum myalbum) {
+		palyerdao.adjustPlayList(myalbum);
+		
+	}
 }
